@@ -5,6 +5,7 @@
  */
 package com.expedia.util;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -38,7 +39,7 @@ public final class AppConfigurationUtil {
 
         properties = new Properties();
         ClassLoader cl = AppConfigurationUtil.class.getClassLoader();
-        InputStream inConfig = cl.getResourceAsStream("configuration\\config.properties");
+        InputStream inConfig = cl.getResourceAsStream("configuration"+File.separator+"config.properties");
         properties.load(inConfig);
 
     }
