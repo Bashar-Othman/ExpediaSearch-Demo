@@ -1,4 +1,3 @@
-# ExpediaSearch-Demo
 ==========================
 ExpediaSearch Web-based project (Demo)
 ==========================
